@@ -1,3 +1,4 @@
+// some comment
 import App from "./App.svelte";
 
 new App({
