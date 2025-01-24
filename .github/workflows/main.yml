@@ -25,7 +25,3 @@ jobs:
         run: yarn test
       - name: Integration tests
         run: yarn test:e2e
-      - name: Report JUnit test results
-        uses: actions/junit-report@v2
-        with:
-          test_results: 'junit.xml'
