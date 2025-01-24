@@ -29,6 +29,12 @@ pipeline {
     }
 
     post {
+        success {
+            currentBuild.description = "Build Successful - Version 1.0.0"
+        }
+        failure {
+            currentBuild.description = "Build Failed - Check logs for details"
+        }
         always {
             junit '**/reports/**/*.xml'
         }
