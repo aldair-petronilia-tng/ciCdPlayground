@@ -27,6 +27,10 @@ pipeline {
             }
         }
     }
-    
-    junit stdioRetention: '', testResults: '**/reports/**/*.xml'
+
+    post {
+        always {
+            junit '**/reports/**/*.xml'
+        }
+    }
 }
