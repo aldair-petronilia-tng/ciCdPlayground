@@ -27,4 +27,6 @@ pipeline {
             }
         }
     }
+    
+    junit stdioRetention: '', testResults: '**/reports/**/*.xml'
 }
